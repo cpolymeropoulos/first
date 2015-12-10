@@ -9,6 +9,7 @@ def create
  
   if @user.save
     redirect_to @user, notice: "Thank you for signing up for Ribbit!"
+    session[:user_id] = @user.id
   else
     render 'new'
   end
