@@ -17,6 +17,7 @@ end
 
 def show
   @user = User.find(params[:id])
+  @ribbit = Ribbit.new
 end
 
 def user_params
