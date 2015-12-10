@@ -12,6 +12,7 @@ validates :username, uniqueness: true, presence: true
 #validates :email, uniqueness: true, presence: true, format: { with: /^[\w.+-]+@([\w]+.)+\w+$/ }
 validates :email, uniqueness: true, presence: true, format: { with: /.*[\w.+-]+@([\w]+.)+\w+\z/ }
 
+has_many :ribbits
 
 private
  
